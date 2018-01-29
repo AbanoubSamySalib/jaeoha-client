@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="123.0" prefWidth="320.0" style="-fx-background-color: #0284a8;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.homescreen.OnlineNotifController">
+   <children>
+      <Circle fill="DODGERBLUE" layoutX="58.0" layoutY="62.0" radius="44.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label fx:id="userName" alignment="CENTER" layoutX="110.0" layoutY="18.0" prefHeight="39.0" prefWidth="166.0" text="Label">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="119.0" layoutY="50.0" prefHeight="39.0" prefWidth="166.0" text="Start Chatting Now">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Circle fill="#25ff75" layoutX="295.0" layoutY="57.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

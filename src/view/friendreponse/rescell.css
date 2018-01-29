@@ -1,0 +1,19 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#resNotif
+{
+    
+    -fx-background-radius: 30 30 30 30;
+}
+
+#responseList .list-cell:even {
+-fx-background-color: #0284a8;
+
+}
+
+#responseList .list-cell:odd {
+-fx-background-color: #0284a8;
+
+}

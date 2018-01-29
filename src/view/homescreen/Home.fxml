@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1027.0" stylesheets="@home.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="550.0" prefWidth="256.0" BorderPane.alignment="CENTER">
+         <content>
+            <VBox alignment="TOP_CENTER" prefHeight="550.0" prefWidth="249.0" style="-fx-background-color: #02547d;">
+               <children>
+                  <ComboBox fx:id="statusBox" onAction="#statusBoxChanged" prefHeight="25.0" prefWidth="98.0">
+                     <VBox.margin>
+                        <Insets left="130.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Circle fx:id="profileImage" fill="DODGERBLUE" radius="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Circle>
+                  <Label fx:id="userNameLabel" alignment="CENTER" contentDisplay="TOP" onMousePressed="#userNamePressed" prefHeight="30.0" prefWidth="184.0" text="Name" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="friends" onMousePressed="#friendsPressed" prefHeight="46.0" prefWidth="201.0">
+                     <children>
+                        <Circle fill="DODGERBLUE" radius="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Circle>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="166.0" text="Friends" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fx:id="notifications" onMousePressed="#notificationsPressed" prefHeight="46.0" prefWidth="201.0">
+                     <children>
+                        <StackPane prefHeight="31.0" prefWidth="38.0">
+                           <children>
+                              <Circle fx:id="notifCircle" fill="DODGERBLUE" radius="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                                 <StackPane.margin>
+                                    <Insets left="5.0" />
+                                 </StackPane.margin>
+                              </Circle>
+                              <Label fx:id="notifLabel" prefHeight="23.0" prefWidth="19.0" textFill="WHITE" visible="false">
+                                 <StackPane.margin>
+                                    <Insets bottom="30.0" left="30.0" />
+                                 </StackPane.margin>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="166.0" text="Notifications" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fx:id="chats" onMousePressed="#chatsPressed" prefHeight="46.0" prefWidth="201.0">
+                     <children>
+                        <Circle fx:id="chatsCircle" fill="DODGERBLUE" radius="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Circle>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="166.0" text="Chats" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fx:id="groupChats" layoutX="10.0" layoutY="392.0" onMousePressed="#groupChatsPressed" prefHeight="46.0" prefWidth="201.0">
+                     <children>
+                        <Circle fx:id="chatsCircle1" fill="DODGERBLUE" radius="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Circle>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="166.0" text="Group Chats" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fx:id="createGroupChat" onMousePressed="#createGroupChatPressed" prefHeight="46.0" prefWidth="201.0">
+                     <children>
+                        <Circle fx:id="groupCircle" fill="DODGERBLUE" radius="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Circle>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="166.0" text="Create group Chat" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fx:id="addFriend" onMousePressed="#addFriendPressed" prefHeight="46.0" prefWidth="201.0">
+                     <children>
+                        <Circle fill="DODGERBLUE" radius="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Circle>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="166.0" text="Add friend" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fx:id="friendRequests" onMousePressed="#friendRequestsPressed" prefHeight="46.0" prefWidth="201.0">
+                     <children>
+                        <StackPane prefHeight="31.0" prefWidth="38.0">
+                           <children>
+                              <Circle fx:id="requestCircle" fill="DODGERBLUE" radius="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                                 <StackPane.margin>
+                                    <Insets left="5.0" />
+                                 </StackPane.margin>
+                              </Circle>
+                              <Label fx:id="reqNotif" prefHeight="23.0" prefWidth="19.0" textFill="WHITE" visible="false">
+                                 <StackPane.margin>
+                                    <Insets bottom="30.0" left="30.0" />
+                                 </StackPane.margin>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="166.0" text="Friend Requests" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fx:id="friendResponse" layoutX="10.0" layoutY="496.0" onMousePressed="#friendResponsePressed" prefHeight="46.0" prefWidth="201.0">
+                     <children>
+                        <StackPane prefHeight="31.0" prefWidth="38.0">
+                           <children>
+                              <Circle fill="DODGERBLUE" radius="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                                 <StackPane.margin>
+                                    <Insets left="5.0" />
+                                 </StackPane.margin>
+                              </Circle>
+                              <Label fx:id="responsNotif" prefHeight="23.0" prefWidth="19.0" textFill="WHITE" visible="false">
+                                 <StackPane.margin>
+                                    <Insets bottom="30.0" left="30.0" />
+                                 </StackPane.margin>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="173.0" text="Friend Respons" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="midAnchor" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="550.0" prefWidth="326.0" style="-fx-background-color: #0284a8;" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <AnchorPane fx:id="rightAnchor" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="550.0" prefWidth="444.0" style="-fx-background-color: #a9e8dc;" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane fx:id="chatPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="444.0">
+               <top>
+                  <AnchorPane prefHeight="91.0" prefWidth="444.0" style="-fx-background-color: #a9e8dc;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Circle fill="DODGERBLUE" layoutX="51.0" layoutY="40.0" radius="37.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                        <ImageView fx:id="savePhoto" fitHeight="51.0" fitWidth="52.0" layoutX="373.0" layoutY="15.0" onMousePressed="#saveMessages" pickOnBounds="true" preserveRatio="true" />
+                        <MenuButton layoutX="197.0" layoutY="25.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="147.0" text="Message style" textFill="#323232">
+                          <items>
+                            <MenuItem mnemonicParsing="false">
+                                 <graphic>
+                                    <ColorPicker fx:id="colorPicker" prefHeight="39.0" prefWidth="55.0" />
+                                 </graphic>
+                              </MenuItem>
+                            <MenuItem mnemonicParsing="false">
+                                 <graphic>
+                                    <MenuButton fx:id="fontStyle" mnemonicParsing="false" text="Font" />
+                                 </graphic>
+                              </MenuItem>
+                              <MenuItem mnemonicParsing="false">
+                                 <graphic>
+                                    <MenuButton fx:id="fontSize" mnemonicParsing="false" text="Font size" />
+                                 </graphic>
+                              </MenuItem>
+                          </items>
+                        </MenuButton>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <bottom>
+                  <HBox prefHeight="59.0" prefWidth="444.0" style="-fx-background-color: #a9e8dc;" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="file" fitHeight="38.0" fitWidth="40.0" onMousePressed="#filePressed" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="3.0" right="5.0" top="10.0" />
+                           </HBox.margin></ImageView>
+                        <TextField fx:id="messageInput" prefHeight="38.0" prefWidth="369.0">
+                           <HBox.margin>
+                              <Insets right="15.0" top="10.0" />
+                           </HBox.margin></TextField>
+                     </children>
+                  </HBox>
+               </bottom>
+               <center>
+                  <ListView fx:id="messageList" prefHeight="200.0" prefWidth="200.0" stylesheets="@chatList.css" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children></AnchorPane>
+   </right>
+</BorderPane>

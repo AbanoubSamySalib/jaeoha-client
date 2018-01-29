@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 20, 2018, 2:02:42 PM
+    Author     : abanoub samy
+*/
+
+#messageList .list-cell:even {
+-fx-background-color: #D9ECF2;
+
+}
+#messageList .list-cell:odd {
+-fx-background-color: #D9ECF2;
+
+}

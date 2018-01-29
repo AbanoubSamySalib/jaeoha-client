@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="326.0" style="-fx-background-color: #0284a8;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.friendsGroupChoose.FriendGroupCellController">
+   <children>
+      <Circle fill="DODGERBLUE" layoutX="50.0" layoutY="50.0" radius="36.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label fx:id="userName" layoutX="125.0" layoutY="27.0" prefHeight="36.0" prefWidth="121.0" text="Label" AnchorPane.rightAnchor="89.0" />
+      <Label fx:id="userStatus" layoutX="125.0" layoutY="66.0" prefHeight="26.0" prefWidth="111.0" />
+      <CheckBox fx:id="checkBox" layoutX="263.0" layoutY="35.0" mnemonicParsing="false" />
+   </children>
+</AnchorPane>

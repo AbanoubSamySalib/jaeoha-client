@@ -1,0 +1,13 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#requestsList .list-cell:even {
+-fx-background-color: #0284a8;
+
+}
+
+#requestsList .list-cell:odd {
+-fx-background-color: #0284a8;
+
+}

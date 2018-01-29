@@ -1,0 +1,48 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#notifLabel{
+    
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color:red;
+    
+}
+
+
+#responsNotif
+{ 
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color:red;
+}
+
+
+#reqNotif
+{
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color:red;
+    
+    
+}
+
+#messageLayout1
+{
+   -fx-background-color:#8CBEB2;
+   -fx-padding: 7;
+   -fx-background-radius:10 ;  
+}
+
+#messageLayout2
+{
+   -fx-background-color:#d3d3d3;
+   -fx-padding: 7;
+   -fx-background-radius: 10;
+}
+
+#messageInput{
+    
+    -fx-background-radius: 10 10 10 10;
+    
+}
+
+

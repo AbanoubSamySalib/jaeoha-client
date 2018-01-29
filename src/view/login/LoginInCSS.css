@@ -1,0 +1,35 @@
+.button{
+    -fx-pref-height: 47px;
+    -fx-pref-width: 145px;
+    -fx-background-color:#0284a8;
+    -fx-font-size:30px;
+    -fx-text-fill: #a9e8dc;
+    -fx-font-family:Century Gothic;
+}  
+.textfield{
+    -fx-background-color: #e1f7e7;
+}
+.label{
+    -fx-font-size: 24px;
+    -fx-text-fill:#02bec4;
+    -fx-font-family:Century Gothic;
+}
+#label1{
+    -fx-font-size: 60px;
+    -fx-font-family:Century Gothic;
+}
+
+#informLabel{
+    
+    
+   -fx-font-size:30px;
+    -fx-font-family:Century Gothic;
+    -fx-text-fill:red;
+    
+    
+}
+
+#password{
+    
+    -fx-background-color:  #a9e8dc;
+}
